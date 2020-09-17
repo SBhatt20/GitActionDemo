@@ -32,9 +32,4 @@ jobs:
     - uses: actions/checkout@v2
     - name: Test
       run: dotnet test --no-restore --verbosity normal
-    - name: Publish to NuGet
-      uses: brandedoutcast/publish-nuget@v2
-      with:
-        PROJECT_FILE_PATH: scr/MiddlewareDemo/MiddlewareDemo.csproj
-        TAG_FORMAT: '*'
-        NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+   

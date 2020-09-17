@@ -12,7 +12,7 @@ namespace GitActionDemoTest
       DemoClass obj = new DemoClass();
       string output = obj.DemoMethod("test");
 
-      Assert.Equal("this is a demo method output-test---", output);
+      Assert.Equal("this is a demo method output-test", output);
 
     }
   }
